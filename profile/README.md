@@ -18,8 +18,11 @@ We are a tight-knit squad of **20 Super-Talent "A-Player" Engineers**. We don't 
 
 ### 🌟 Our Proud Team
 
-<p align="center">
-</p>
+<a href="https://github.com/orgs/Codefied-CodePix/people">
+  <img src="https://contrib.rocks/image?repo=Codefied-CodePix/.github" />
+</a>
+
+*Our team consists of specialized Architects, AI Engineers, and Full-Stack Developers dedicated to your success.*
 
 ---
 
