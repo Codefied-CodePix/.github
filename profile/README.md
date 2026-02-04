@@ -16,6 +16,13 @@ We are a tight-knit squad of **20 Super-Talent "A-Player" Engineers**. We don't 
 
 ---
 
+### 🌟 Our Proud Team
+
+<p align="center">
+</p>
+
+---
+
 ### 🛠️ What We Build
 
 We cover the full spectrum of modern technology, from high-performance web apps to cutting-edge Agentic AI.
