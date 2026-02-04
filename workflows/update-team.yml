@@ -1,19 +1,21 @@
-name: Update Team Members
+name: Team Update
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight
-  workflow_dispatch: # Allows you to run it manually
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
-  update-readme:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Generate Member List
-        uses: jamesgeorge007/github-organization-members@v1.1.0
+      - name: Update README
+        uses: platane/snk@v3
         with:
-          org: 'Codefied-CodePix'
-          token: ${{ secrets.ORG_MEMBER_TOKEN }}
-          # This will look for and in your README
+          # This is just one example; there are many "Contributor List" 
+          # actions that use the secret to build a static image 
+          # or an HTML grid in your README.
+          github_user_name: Codefied-CodePix
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_MEMBER_TOKEN }}
