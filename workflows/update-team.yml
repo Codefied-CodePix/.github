@@ -1,0 +1,19 @@
+name: Update Team Members
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight
+  workflow_dispatch: # Allows you to run it manually
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate Member List
+        uses: jamesgeorge007/github-organization-members@v1.1.0
+        with:
+          org: 'Codefied-CodePix'
+          token: ${{ secrets.ORG_MEMBER_TOKEN }}
+          # This will look for and in your README
